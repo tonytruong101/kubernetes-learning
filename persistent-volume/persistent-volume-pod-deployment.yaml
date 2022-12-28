@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+spec:
+  containers:
+  - name: example-container
+    image: example-image
+    volumeMounts:
+    - name: example-pv-storage
+      mountPath: "/mnt/data"
+  volumes:
+  - name: example-pv-storage
+    persistentVolumeClaim:
+      claimName: example-pvc
+
