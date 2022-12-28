@@ -12,17 +12,4 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "/mnt/data"
----
-
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: example-pvc
-spec:
-  storageClassName: standard
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
 
