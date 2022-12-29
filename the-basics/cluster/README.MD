@@ -6,6 +6,7 @@ The API server is the central way to interact with the cluster, and it exposes t
 
 There are two types of nodes in a Kubernetes cluster: master nodes and worker nodes. Master nodes are responsible for managing the cluster, and worker nodes are responsible for running the applications. Master nodes host the control plane components and etcd, and worker nodes host the pods that run the applications.
 
+
 **Here are some key concepts to understand when it comes to Kubernetes clusters**:
 
 - **Cluster**: A set of machines that are used to run containerized applications.
