@@ -1,0 +1,9 @@
+version: '3'
+services:
+  react:
+    image: my-react-app
+    build: . 
+    privileged: true
+    ports:
+      - 80:8080
+    container_name: my-react-app
